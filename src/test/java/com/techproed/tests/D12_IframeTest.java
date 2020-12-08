@@ -15,7 +15,8 @@ import java.util.concurrent.TimeUnit;
 public class D12_IframeTest {
     /*  ● https://the-internet.herokuapp.com/iframe adresine gidin.
               ● Bir metod olusturun: iframeTest
-   ○ “An IFrame containing….” textini konsolda yazdirin.
+     //      ○ “An IFrame containing….” textinin ulasilabilir oldugunu dogrulayin ve yazdirin
+//dogrulayin dedgimiz icin sofassert kullandik
    ○ Text Box’a “Merhaba Dunya!” yazin.
    ○ TextBox’in altinda bulunan “Elemental Selenium” linkini textini konsolda  yazdirin.
 
@@ -40,7 +41,7 @@ public class D12_IframeTest {
         softAssert.assertTrue(anIFrameYazisiElementi.isEnabled());
         System.out.println(anIFrameYazisiElementi.getText());
 
-        //      ○ Text Box’a “Merhaba Dunya!” yazin.
+        //      burda id ile gectik
         driver.switchTo().frame("mce_0_ifr");
 
         //artik iframe'in icindeyim
@@ -49,7 +50,7 @@ public class D12_IframeTest {
         textBox.sendKeys("Merhaba Dunya!");
         //      ○ TextBox’in altinda bulunan “Elemental Selenium” linkini textinin gorunur oldugunu dogrulayin
         //  ve  konsolda yazdirin.
-        // 46.satirda iframe'in icine girmistik, simdi iframe'in disinda bir islem yapmak istiyorsak
+        // 44.satirda iframe'in icine girmistik, simdi iframe'in disinda bir islem yapmak istiyorsak
         // once iframe'den cikmamiz gerekiyor.
         driver.switchTo().defaultContent();
         WebElement elemantalYazisiElementi=driver.findElement(By.linkText("Elemental Selenium"));

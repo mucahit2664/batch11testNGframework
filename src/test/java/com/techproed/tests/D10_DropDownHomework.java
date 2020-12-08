@@ -34,12 +34,12 @@ public class D10_DropDownHomework {
     public void setUp() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
     }
 
     @Test
-    public void webappsecurityTest() {
+    public void test01() {
         //1. “http://zero.webappsecurity.com/” Adresine gidin
 
         driver.get("http://zero.webappsecurity.com/");
@@ -64,46 +64,37 @@ public class D10_DropDownHomework {
         select.selectByVisibleText("Eurozone (euro)");
 
         // 9.“amount” kutusuna bir sayi girin
-        WebElement amountBox=driver.findElement(By.id("pc_amount"));
-        amountBox.sendKeys("100");
-       // WebElement amountTextBox=driver.findElement(By.id("pc_amount"));
-       // amountTextBox.sendKeys("100");
-
+        WebElement amountTextBox=driver.findElement(By.id("pc_amount"));
+        amountTextBox.sendKeys("100");
 
         // 10. “US Dollars” in secilmedigini test edin
-        //WebElement dolarButonu=driver.findElement(By.id("pc_inDollars_true"));
-      //  Assert.assertFalse(dolarButonu.isSelected());
-
 
         String dropdownSeciliOpsiyon=select.getFirstSelectedOption().toString();
         Assert.assertFalse(dropdownSeciliOpsiyon.equals("US Dollars"));
 
         // 11. “Selected currency” butonunu secin
-        driver.findElement(By.id("pc_inDollars_false")).click();
 
-     //   driver.findElement(By.id("pc_inDollars_false")).click();
+        driver.findElement(By.id("pc_inDollars_false")).click();
 
         // 12.“Calculate Costs” butonuna basin sonra “purchase” butonuna basin
         driver.findElement(By.id("pc_calculate_costs")).click();
         driver.findElement(By.id("purchase_cash")).click();
-      //  driver.findElement(By.id("pc_calculate_costs")).click();
-      //  driver.findElement(By.id("purchase_cash")).click();
 
         // 13.“Foreign currency cash was successfully purchased.” yazisinin ciktigini control edin.
-        WebElement sonucYAZISIElementi=driver.findElement(By.id("alert_content"));
-        String sonucYaazisi=sonucYAZISIElementi.getText();
-        Assert.assertEquals(sonucYaazisi,"Foreign currency cash was successfully purchased.");
+
+        WebElement sonucYazisiElementi=driver.findElement(By.id("alert_content"));
+        String sonucYazisi=sonucYazisiElementi.getText();
+        Assert.assertEquals(sonucYazisi,"Foreign currency cash was successfully purchased.");
 
 
-      //  WebElement sonucYazisiElementi=driver.findElement(By.id("alert_content"));
-     //   String sonucYazisi=sonucYazisiElementi.getText();
-     //   Assert.assertEquals(sonucYazisi,"Foreign currency cash was successfully purchased.");
+
 
     }
     @AfterClass
     public void tearDown () {
 
 
-       driver.close();
+        driver.close();
     }
+
 }

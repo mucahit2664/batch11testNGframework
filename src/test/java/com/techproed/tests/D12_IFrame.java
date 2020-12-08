@@ -2,15 +2,13 @@ package com.techproed.tests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
+
 
 import java.util.concurrent.TimeUnit;
 
@@ -24,7 +22,7 @@ public class D12_IFrame {
         driver.manage().window().maximize();
     }
     @Test
-    public void iFrameTest(){
+    public void iFrameTest() throws InterruptedException {
         driver.get("https://html.com/tags/iframe/");
         //1.adim iFrame'e nasil gecis yapacagimiza(switch) karar veririz
         //  index,id,webElement olarak locate ederiz
@@ -33,7 +31,7 @@ public class D12_IFrame {
         WebElement iFrame=driver.findElement(By.xpath("//iframe[@class='lazy-loaded']"));
 
         // 2. adim iFrame'e switchTo() ile gecis yapiyoruz
-
+Thread.sleep(3000);
         driver.switchTo().frame(iFrame);
         // 3. adim : iframe icinde istedigimiz WebElementinini locate edip istedigimiz islemi yapabiliriz
 

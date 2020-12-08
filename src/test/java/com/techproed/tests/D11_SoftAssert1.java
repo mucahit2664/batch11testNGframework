@@ -49,7 +49,7 @@ public class D11_SoftAssert1 {
         // 4.   bulunan sonuc sayisini yazdirin
         System.out.println(sonucYaziElementi.getText());
         // 5.   sonuc yazisinin "araba" icerdigini dogrulayin
-        softAssert.assertTrue(sonucYaziElementi.getText().contains("arabax"), "arama sonuc sayisi araba kelimesi icermiyor");
+        softAssert.assertTrue(sonucYaziElementi.getText().contains("araba"), "arama sonuc sayisi araba kelimesi icermiyor");
 
         //6.    Tumunu temizle linkini tiklayin
         driver.findElement(By.linkText("Tümünü Temizle")).click();

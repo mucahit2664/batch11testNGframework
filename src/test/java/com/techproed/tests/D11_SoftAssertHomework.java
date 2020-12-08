@@ -41,8 +41,7 @@ public void Test01(){
     // title : Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more
     //String actualTitle=driver.getTitle();
  //   SoftAssert softAssert=new SoftAssert();
-
-  //  softAssert.assertEquals(actualTitle,"Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more","title yanlis amazon sayfasinda degilsin");
+ //  softAssert.assertEquals(actualTitle,"Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more","title yanlis amazon sayfasinda degilsin");
 //3. kategori dropdown'indan Books kategorisini secin
 //    arama kutusuna history yazdirip aratin
  WebElement dropDown=driver.findElement(By.id("searchDropdownBox"));
