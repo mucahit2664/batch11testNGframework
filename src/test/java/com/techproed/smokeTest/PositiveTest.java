@@ -17,10 +17,11 @@ public class PositiveTest extends TestBase {
     //test data password : Manager2!
     //Degerleri girildiginde sayfaya basarili sekilde girilebildigini test et
     @Test
-    public void positiveLoginTest(){
+    public void positiveLoginTest() throws InterruptedException {
         //       http://qa-environment.crystalkeyhotels.com adresine git
         driver.get("http://qa-environment.crystalkeyhotels.com");
         //      login butonuna bas
+        Thread.sleep(10000);
         driver.findElement(By.linkText("Log in")).click();
         //test data username: manager ,
         WebElement usernameTextBox = driver.findElement(By.id("UserName"));

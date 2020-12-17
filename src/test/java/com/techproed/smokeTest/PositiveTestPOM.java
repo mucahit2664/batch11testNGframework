@@ -17,7 +17,7 @@ public class PositiveTestPOM extends TestBase {
 
 
     @Test
-    public void test(){
+    public void Test() throws InterruptedException {
         //		 http://qa-environment.crystalkeyhotels.com adresine git
         driver.get(ConfigReader.getProperty("c_url"));
         //		login butonuna bas
@@ -27,6 +27,8 @@ public class PositiveTestPOM extends TestBase {
         crsytalHotelPage.userNameTexBox.sendKeys(ConfigReader.getProperty("valid_user"));
         //test data password : Manager2!
         crsytalHotelPage.passwordTextBox.sendKeys(ConfigReader.getProperty("valid_password"));
+
         crsytalHotelPage.ikinciLoginButonu.click();
+        Thread.sleep(10000);
     }
 }

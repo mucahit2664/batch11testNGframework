@@ -13,17 +13,15 @@ import java.util.List;
 
 public class D18_WebTables extends TestBase {
 
-    public void login()
-    {
+    public void login(){
         //● http://qa-environment.crystalkeyhotels.com/admin/HotelRoomAdmin adresine gidin
         // ○ Username : manager
         // ○ Password : Manager2!
         driver.get("http://qa-environment.crystalkeyhotels.com/admin/HotelRoomAdmin");
-        WebDriverWait wait=new WebDriverWait(driver,30);
-WebElement id=wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("UserName")));
-id.sendKeys("manager");
-         driver.findElement(By.id("Password")).sendKeys("Manager2!"+ Keys.ENTER);
+        driver.findElement(By.id("UserName")).sendKeys("manager");
+        driver.findElement(By.id("Password")).sendKeys("Manager2!"+ Keys.ENTER);
     }
+
     @Test
     public void tableTest() throws InterruptedException {
         login();
