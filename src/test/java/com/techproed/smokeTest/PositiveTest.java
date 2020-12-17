@@ -31,7 +31,6 @@ public class PositiveTest extends TestBase {
         //Degerleri girildiginde sayfaya basarili sekilde girilebildigini test et
         WebElement adduser=driver.findElement(By.xpath("//*[text()='Add User '] "));
         Assert.assertTrue(adduser.isDisplayed());
-
     }
 
 }
