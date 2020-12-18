@@ -17,7 +17,7 @@ public class D18_WebTables extends TestBase {
         //● http://qa-environment.crystalkeyhotels.com/admin/HotelRoomAdmin adresine gidin
         // ○ Username : manager
         // ○ Password : Manager2!
-        driver.get("http://qa-environment.crystalkeyhotels.com/admin/HotelRoomAdmin");
+        driver.get("http://qa-environment.crystalkeyhotels.com/Admin/UserAdmin");
         driver.findElement(By.id("UserName")).sendKeys("manager");
         driver.findElement(By.id("Password")).sendKeys("Manager2!"+ Keys.ENTER);
     }

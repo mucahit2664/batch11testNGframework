@@ -43,7 +43,7 @@ public class D20_FaceBookPOM extends TestBase {
 
     @Test
     public void test3() throws InterruptedException {
-
+//manuesl yazdigim bir sey yok
         driver.get(ConfigReader.getProperty("facebook_url"));
         FaceBookPage faceBookPage=new FaceBookPage(driver);
         faceBookPage.userTextBox.sendKeys(ConfigReader.getProperty("fb_user"));

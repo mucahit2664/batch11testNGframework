@@ -11,7 +11,7 @@ public class PositiveTest extends TestBase {
     //1) com.techproed altinda bir package olustur : smoketest
     //2) Bir Class olustur : PositiveTest
     //3) Bir test method olustur positiveLoginTest()
-    //       http://qa-environment.crystalkeyhotels.com adresine git
+    //     http://qa-environment.crystalkeyhotels.com adresine git
     //      login butonuna bas
     //test data username: manager ,
     //test data password : Manager2!

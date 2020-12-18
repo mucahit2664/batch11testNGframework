@@ -14,6 +14,7 @@ public FaceBookPage(WebDriver driver){
     //driver`i bu sayfada kontrol edebilmek icin bu sayfada da bir driver olusturmaliyim
     //olusturacagim driver`i instance olarak olusturuyorum ki bir class`in her yerinde kullanabileyim
    this.driver=driver;
+   //16.satirda benim test Class`indan parametre olarak gonderdigim driver`i bu sayfadaki driver`a atiyor
    //bu sayfadaki driverimiza ilk degeri vermesi icin
     PageFactory.initElements(driver,this);
 }
@@ -26,5 +27,6 @@ public WebElement userTextBox;
 
 @FindBy(id="u_0_2")
     public WebElement loginButonu;
+
 
 }

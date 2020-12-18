@@ -27,7 +27,7 @@ public class ConfigReader {
             e.printStackTrace();
         }
     }
-
+//tercumanlik kismi
     public static String getProperty(String key){
         return properties.getProperty(key);
     }
