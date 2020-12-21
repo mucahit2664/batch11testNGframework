@@ -10,7 +10,7 @@ public class NegativeTestWithPage extends TestBase {
         //3 Farkli test Methodunda 3 senaryoyu test et
         //              - yanlisSifre
         //2 http://qa-environment.crystalkeyhotels.com adresine git
-        driver.get("http://qa-environment.crystalkeyhotels.com");
+        driver.get("http://crystalkeyhotels.com");
         CrsytalHotelPage crsytalHotelPage=new CrsytalHotelPage(driver);
         crsytalHotelPage.ilkLogIn.click();
         crsytalHotelPage.userNameTexBox.sendKeys("manager");

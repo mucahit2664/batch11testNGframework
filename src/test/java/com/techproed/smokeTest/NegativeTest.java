@@ -18,7 +18,7 @@ public class NegativeTest extends TestBase {
     //4) Verilen senaryolar ile giris yapilamadigini test et
     Faker faker=new Faker();
     public void giris(){
-        driver.get("http://qa-environment.crystalkeyhotels.com");
+        driver.get("http://crystalkeyhotels.com");
         driver.findElement(By.linkText("Log in")).click();
     }
     @Test

@@ -19,7 +19,7 @@ public class PositiveTest extends TestBase {
     @Test
     public void positiveLoginTest() throws InterruptedException {
         //       http://qa-environment.crystalkeyhotels.com adresine git
-        driver.get("http://qa-environment.crystalkeyhotels.com");
+        driver.get("http://crystalkeyhotels.com");
         //      login butonuna bas
         Thread.sleep(10000);
         driver.findElement(By.linkText("Log in")).click();

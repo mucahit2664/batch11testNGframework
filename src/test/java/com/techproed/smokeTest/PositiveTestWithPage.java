@@ -13,7 +13,7 @@ public class PositiveTestWithPage extends TestBase {
         //2) Bir Class olustur : PositiveTest
         //3) Bir test method olustur positiveLoginTest()
         //       http://qa-environment.crystalkeyhotels.com adresine git
-        driver.get("http://qa-environment.crystalkeyhotels.com");
+        driver.get("http://crystalkeyhotels.com");
         //      login butonuna bas
         CrsytalHotelPage crsytalHotelPage =new CrsytalHotelPage(driver);
         crsytalHotelPage.ilkLogIn.click();

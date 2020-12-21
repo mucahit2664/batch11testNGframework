@@ -16,7 +16,7 @@ public class D18_CreateHotelRoom extends TestBase {
         // 1. Tests packagenin altına class olusturun: HotelRoomCreation
         // 2. Bir metod olusturun: RoomCreateTest()
         // 3. http://qa-environment.crystalkeyhotels.com adresine gidin.
-        driver.get("http://qa-environment.crystalkeyhotels.com");
+        driver.get("http://crystalkeyhotels.com");
         // 4. Username textbox ve password metin kutularını locate edin ve aşağıdaki verileri girin.
         //              a. Username : manager               b. Password  : Manager2!
         driver.findElement(By.linkText("Log in")).click();
@@ -69,6 +69,7 @@ public class D18_CreateHotelRoom extends TestBase {
         //12. "LIST OF HOTELROOMS" textinin göründüğünü doğrulayın..
         WebElement hotelRoomListYaziElementi=driver.findElement(By.xpath("(//*[text()='List Of Hotelrooms'])[2]"));
         Assert.assertTrue(hotelRoomListYaziElementi.isDisplayed());
+
 
     }
 

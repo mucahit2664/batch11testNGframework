@@ -15,7 +15,7 @@ public class D17_CreateHotel extends TestBase {
         //1. Tests packagenin altına class olusturun: D17_CreateHotel
         //2. Bir metod olusturun: createHotel
         //3. qa-environment.crystalkeyhotels.com adresine git.
-        driver.get("http://qa-environment.crystalkeyhotels.com ");
+        driver.get("http://crystalkeyhotels.com ");
         driver.findElement(By.linkText("Log in")).click();
         //4. Username textbox ve password metin kutularını locate edin ve asagidaki verileri girin.
         //              a. Username : manager

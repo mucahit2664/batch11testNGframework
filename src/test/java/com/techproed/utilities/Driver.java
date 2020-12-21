@@ -26,6 +26,7 @@ public class Driver {
 
         //ilk gonderdiginde bos oldugunda gidiyor ikincisinde gidiyor varsa aagiya iniyor sonra tekrar bir daha
         //calistiryor gidiyor o sayfaya
+        ///driver bos mu degil mi yani driver acilmis mi? acilmadiysa ac,, aciksa birdaha acmana gerek yok.acik olandan devam et
         if (driver==null){
 
             switch (ConfigReader.getProperty("browser")){
