@@ -23,7 +23,7 @@ public class WriteExcel {
 
     @Test
     public void writeExcelTest() throws IOException {
-        String path="./src/test/java/resources/ulkeler.xlsx";
+        String path=".\\src\\test\\java\\resources\\ulkeler.xlsx";
         FileInputStream fileInputStream=new FileInputStream(path);
         Workbook workbook= WorkbookFactory.create(fileInputStream);
         workbook.getSheetAt(0).getRow(0).createCell(4).setCellValue("NUFUS");

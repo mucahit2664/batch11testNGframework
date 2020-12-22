@@ -7,7 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class NegativeTestGlbSignInTest {
-    @Test
+    @Test(groups = "grup1")
     public void yanlisSifre() throws InterruptedException {
         Driver.getDriver().get(ConfigReader.getProperty("gt_signUp_url"));
         GlbHomePage glbHomePage=new GlbHomePage();
@@ -21,7 +21,7 @@ public class NegativeTestGlbSignInTest {
         Assert.assertTrue(glbHomePage.girisBasarisiz.getText().contains(ConfigReader.getProperty("gt_giris_basarisiz_yazi")));
         Driver.closeDriver();
     }
-    @Test
+    @Test(groups = {"group1","grup2"})
     public void yanlisKullanici() throws InterruptedException {
         Driver.getDriver().get(ConfigReader.getProperty("gt_signUp_url"));
         GlbHomePage glbHomePage=new GlbHomePage();
@@ -35,7 +35,7 @@ public class NegativeTestGlbSignInTest {
         Assert.assertTrue(glbHomePage.girisBasarisiz.getText().contains(ConfigReader.getProperty("gt_giris_basarisiz_yazi")));
         Driver.closeDriver();
     }
-    @Test
+    @Test(groups = {"group1","grup2","grup3"})
     public void yanlisSifreVeKullanici() throws InterruptedException {
         Driver.getDriver().get(ConfigReader.getProperty("gt_signUp_url"));
         GlbHomePage glbHomePage=new GlbHomePage();

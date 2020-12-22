@@ -38,7 +38,7 @@ public class ReadExcel {
     }
     @Test
     public void readExcel2() throws IOException {
-        String path="./src/test/java/resources/ulkeler.xlsx";
+        String path=".\\src\\test\\java\\resources\\ulkeler.xlsx";
         FileInputStream fileInputStream=new FileInputStream(path);
         Workbook workbook=WorkbookFactory.create(fileInputStream);
         //- 1.satirdaki 2.hucreye gidelim ve yazdiralim

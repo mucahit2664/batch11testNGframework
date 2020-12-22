@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class GlbSignUpTest {
 
-    @Test
+    @Test(groups = "grup1")
     public void signUp() throws InterruptedException {
 
         Driver.getDriver().get(ConfigReader.getProperty("gt_signUp_url"));
