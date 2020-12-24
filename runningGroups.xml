@@ -11,6 +11,7 @@
 
         <packages>
             <package name="com.techproed.smokeTest"></package>
+
         </packages>
     </test>
 

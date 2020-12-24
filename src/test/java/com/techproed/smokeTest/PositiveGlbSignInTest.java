@@ -6,7 +6,7 @@ import com.techproed.utilities.Driver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class PositiveTestGlbSignInTest {
+public class PositiveGlbSignInTest {
     @Test(groups = "{grup2,grup3}")
     public void test() throws InterruptedException {
         Driver.getDriver().get(ConfigReader.getProperty("gt_signUp_url"));

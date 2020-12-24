@@ -6,5 +6,6 @@
             <class name="com.techproed.tests.D11_SoftAssert1"></class>
             <class name="com.techproed.smokeTest.PositiveTest"></class>
         </classes>
+
     </test>
 </suite>

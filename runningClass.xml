@@ -6,4 +6,5 @@
             <class name="com.techproed.smokeTest.PositiveTestPOM"></class>
         </classes>
     </test>
+
 </suite>
