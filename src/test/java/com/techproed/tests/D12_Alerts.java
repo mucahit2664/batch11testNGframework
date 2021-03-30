@@ -33,7 +33,7 @@ public class D12_Alerts {
         driver.switchTo().alert().accept();
         Thread.sleep(3000);
         String sonucYazisi=driver.findElement(By.id("result")).getText();
-        Assert.assertEquals(sonucYazisi,"You successfuly clicked an alert");
+        Assert.assertEquals(sonucYazisi,"You successfully clicked an alert");
     }
     @Test
     public void dismissAlert() throws InterruptedException {

@@ -29,7 +29,7 @@ public class D12_IFrame {
         //  biz bu soruda 3.yolu tercih ettik
 
         WebElement iFrame=driver.findElement(By.xpath("//iframe[@class='lazy-loaded']"));
-
+//iframe[@class='lazy-loaded']
         // 2. adim iFrame'e switchTo() ile gecis yapiyoruz
 Thread.sleep(3000);
         driver.switchTo().frame(iFrame);

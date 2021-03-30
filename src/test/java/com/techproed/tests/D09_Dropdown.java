@@ -58,8 +58,8 @@ public class D09_Dropdown {
         String ikinciSecilenOpsiyon = select.getFirstSelectedOption().getText();
         //sectigimiz opsiyonun Option 2 oldugunu test edelim
         Assert.assertEquals(ikinciSecilenOpsiyon, "Option 2");
-    }
 
+    }
     @Test
     public void tumListe() {
         WebElement dropDown = driver.findElement(By.xpath("//select[@id='dropdown']"));
